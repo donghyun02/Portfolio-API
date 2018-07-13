@@ -53,3 +53,10 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+
+      - deploy:
+          name: Deploy zappa for dev
+          command: |
+            if [ ${CIRCLE_BRANCH=="dev"} ]; then
+              deploy zappa dev
+            fi

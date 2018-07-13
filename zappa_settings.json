@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "Portfolio.settings",
+        "django_settings": "Portfolio.settings",
         "aws_region": "ap-northeast-2",
         "profile_name": "default",
         "project_name": "portfolio",
