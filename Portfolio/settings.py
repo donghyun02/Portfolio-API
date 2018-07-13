@@ -41,11 +41,13 @@ INSTALLED_APPS = [
     'zappa_django_utils',
     'rest_framework',
     'storages',
+    'corsheaders',
 
     'project',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
