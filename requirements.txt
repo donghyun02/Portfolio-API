@@ -1,4 +1,5 @@
 argcomplete==1.9.3
+awscli==1.15.58
 base58==1.0.0
 boto3==1.7.57
 botocore==1.10.57
@@ -6,6 +7,7 @@ certifi==2018.4.16
 cfn-flip==1.0.3
 chardet==3.0.4
 click==6.7
+colorama==0.3.9
 Django==2.0.7
 djangorestframework==3.8.2
 docutils==0.14
@@ -17,11 +19,13 @@ jmespath==0.9.3
 kappa==0.6.0
 lambda-packages==0.20.0
 placebo==0.8.1
+pyasn1==0.4.3
 python-dateutil==2.6.1
 python-slugify==1.2.4
 pytz==2018.5
 PyYAML==3.12
 requests==2.19.1
+rsa==3.4.2
 s3transfer==0.1.13
 six==1.11.0
 toml==0.9.4
@@ -32,3 +36,4 @@ urllib3==1.23
 Werkzeug==0.14.1
 wsgi-request-logger==0.4.6
 zappa==0.46.1
+zappa-django-utils==0.4.0

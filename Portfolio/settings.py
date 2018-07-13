@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'zappa_django_utils',
+    'rest_framework',
+
+    'project',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +80,9 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'zappa_django_utils.db.backends.s3sqlite',
+        'NAME': 'dev.db',
+        'BUCKET': 'dev-portfolio-a1m0nd-kr-api',
     }
 }
 
@@ -105,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
