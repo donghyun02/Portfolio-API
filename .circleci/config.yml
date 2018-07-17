@@ -60,3 +60,4 @@ jobs:
             if [ ${CIRCLE_BRANCH=="dev"} ]; then
               zappa deploy dev
             fi
+
