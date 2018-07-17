@@ -61,3 +61,6 @@ jobs:
             if [ ${CIRCLE_BRANCH=="dev"} ]; then
               zappa update dev
             fi
+            if [ ${CIRCLE_BRANCH=="master"} ]; then
+              zappa update production
+            fi
