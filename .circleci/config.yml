@@ -58,9 +58,9 @@ jobs:
           name: Deploy zappa for dev
           command: |
             . venv/bin/activate
-            if [ ${CIRCLE_BRANCH=="dev"} ]; then
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
               zappa update dev
             fi
-            if [ ${CIRCLE_BRANCH=="master"} ]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               zappa update production
             fi
