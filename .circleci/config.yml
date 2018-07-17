@@ -58,6 +58,6 @@ jobs:
           name: Deploy zappa for dev
           command: |
             if [ ${CIRCLE_BRANCH=="dev"} ]; then
-              zappa deploy dev
+              zappa update dev
             fi
 
