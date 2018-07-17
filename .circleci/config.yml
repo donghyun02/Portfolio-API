@@ -55,7 +55,7 @@ jobs:
           destination: test-reports
 
       - deploy:
-          name: Deploy zappa for dev
+          name: Deploy for zappa
           command: |
             . venv/bin/activate
             if [ "${CIRCLE_BRANCH}" == "dev" ]; then
