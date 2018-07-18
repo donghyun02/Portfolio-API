@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Slide(models.Model):
     project_name = models.CharField(max_length=50, default='')
-    image_url = models.TextField()
+    image = models.ImageField(blank=True)
     description = models.TextField()
     order = models.PositiveIntegerField()
 

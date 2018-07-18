@@ -140,4 +140,6 @@ REST_FRAMEWORK = {
     )
 }
 
-DATA_UPLOAD_MAX_NUMBER_FIELDS = None
+# DATA_UPLOAD_MAX_NUMBER_FIELDS = None
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
