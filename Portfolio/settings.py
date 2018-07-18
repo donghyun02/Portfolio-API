@@ -139,3 +139,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     )
 }
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = None

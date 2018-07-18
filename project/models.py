@@ -13,7 +13,7 @@ class Slide(models.Model):
 class Project(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
-    slides = models.ManyToManyField(Slide)
+    slides = models.ManyToManyField(Slide, blank=True)
 
     def __str__(self):
         return self.name
