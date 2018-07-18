@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Slide(models.Model):
-    project_name = models.CharField(max_length=50, default='')
-    image = models.ImageField(blank=True)
+    project_name = models.CharField(max_length=50, default="")
+    image = models.ImageField(blank=True, default="")
     description = models.TextField()
     order = models.PositiveIntegerField()
 
