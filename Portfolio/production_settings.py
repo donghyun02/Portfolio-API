@@ -86,8 +86,8 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'zappa_django_utils.db.backends.s3sqlite',
-        'NAME': 'dev.db',
-        'BUCKET': 'dev-portfolio-a1m0nd-kr-api',
+        'NAME': 'production.db',
+        'BUCKET': 'production-portfolio-a1m0nd-kr-api',
     }
 }
 
