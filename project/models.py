@@ -14,6 +14,7 @@ class Project(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
     slides = models.ManyToManyField(Slide, blank=True)
+    url = models.TextField(default="", blank=True)
 
     def __str__(self):
         return self.name
