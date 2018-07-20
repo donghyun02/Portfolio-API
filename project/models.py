@@ -8,7 +8,7 @@ class Slide(models.Model):
     order = models.PositiveIntegerField()
 
     def __str__(self):
-        return self.project_name
+        return '{}: {}'.format(self.project_name, self.order)
 
 class Project(models.Model):
     name = models.CharField(max_length=50)
