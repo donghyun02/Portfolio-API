@@ -87,7 +87,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'zappa_django_utils.db.backends.s3sqlite',
         'NAME': 'production.db',
-        'BUCKET': 'production-portfolio-a1m0nd-kr-api',
+        'BUCKET': 'prod-portfolio-a1m0nd-kr-api',
     }
 }
 
