@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Slide(models.Model):
     project = models.ForeignKey("Project", related_name="slides", on_delete=models.CASCADE, default="")

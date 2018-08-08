@@ -1,9 +1,6 @@
 from django.shortcuts import render
-
 # Create your views here.
-from rest_framework import generics, status
-from rest_framework.parsers import FileUploadParser, MultiPartParser
-from rest_framework.response import Response
+from rest_framework import generics
 
 from project.models import Project, Slide
 from project.serializers import ProjectSerializer, SlideSerializer
